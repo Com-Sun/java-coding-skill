@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.avoid_negations.problem;
+package general.ex02_avoid_negations.solution;
 
 import general.Result;
 import general.Microscope;
@@ -17,18 +17,18 @@ class Laboratory {
     Microscope microscope;
 
     Result analyze(Sample sample) {
-        if (microscope.isInorganic(sample)) {
-            return Result.INORGANIC;
-        } else {
+        if (microscope.isOrganic(sample)) {
             return analyzeOrganic(sample);
+        } else {
+            return Result.INORGANIC;
         }
     }
 
     private Result analyzeOrganic(Sample sample) {
-        if (!microscope.isHumanoid(sample)) {
-            return Result.ALIEN;
-        } else {
+        if (microscope.isHumanoid(sample)) {
             return Result.HUMANOID;
+        } else {
+            return Result.ALIEN;
         }
     }
 }

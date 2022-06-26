@@ -5,10 +5,18 @@
  * courses, books, articles, and the like. Contact us if you are in doubt.
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
-***/
-package general.simplify_boolean_expressions;
+ ***/
 
-public interface OxygenTank {
+package general.ex03_return_boolean_expression_directly.problem;
 
-    public double lastsFor(int size);
+class Astronaut {
+
+    String name;
+    int missions;
+
+    boolean isValid() {
+        boolean isValidMissions = missions >= 0;
+        boolean isValidName = name != null && !name.trim().isEmpty();
+        return isValidMissions && isValidName;
+    }
 }

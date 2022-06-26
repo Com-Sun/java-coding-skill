@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.avoid_unneccessary_comparisons.solution;
+package general.ex01_avoid_unneccessary_comparisons.problem;
 
 import general.Result;
 import general.Microscope;
@@ -17,7 +17,7 @@ class Laboratory {
     Microscope microscope;
 
     Result analyze(Sample sample) {
-        if (microscope.isInorganic(sample)) {
+        if (microscope.isInorganic(sample) == true) {
             return Result.INORGANIC;
         } else {
             return analyzeOrganic(sample);
@@ -25,7 +25,7 @@ class Laboratory {
     }
 
     private Result analyzeOrganic(Sample sample) {
-        if (!microscope.isHumanoid(sample)) {
+        if (microscope.isHumanoid(sample) == false) {
             return Result.ALIEN;
         } else {
             return Result.HUMANOID;

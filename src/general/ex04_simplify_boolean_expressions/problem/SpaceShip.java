@@ -6,14 +6,14 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.simplify_boolean_expressions.solution;
+package general.ex04_simplify_boolean_expressions.problem;
 
 
-import general.simplify_boolean_expressions.Crew;
-import general.simplify_boolean_expressions.FuelTank;
-import general.simplify_boolean_expressions.Hull;
-import general.simplify_boolean_expressions.Navigator;
-import general.simplify_boolean_expressions.OxygenTank;
+import general.ex04_simplify_boolean_expressions.Crew;
+import general.ex04_simplify_boolean_expressions.FuelTank;
+import general.ex04_simplify_boolean_expressions.Hull;
+import general.ex04_simplify_boolean_expressions.Navigator;
+import general.ex04_simplify_boolean_expressions.OxygenTank;
 
 class SpaceShip {
 
@@ -28,11 +28,11 @@ class SpaceShip {
         return hull.isIntact() && hasEnoughResources;
     }
 
-    private boolean hasEnoughOxygen() {
-        return oxygenTank.lastsFor(crew.size) > navigator.timeToEarth();
-    }
-
     private boolean hasEnoughFuel() {
         return fuelTank.fuel >= navigator.requiredFuelToEarth();
+    }
+
+    private boolean hasEnoughOxygen() {
+        return oxygenTank.lastsFor(crew.size) > navigator.timeToEarth();
     }
 }

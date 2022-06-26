@@ -6,9 +6,11 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.simplify_boolean_expressions;
+package general.ex04_simplify_boolean_expressions;
 
-public interface Navigator {
-    double requiredFuelToEarth();
-    double timeToEarth();
+
+public abstract class Hull {
+    public int holes;
+
+    public abstract boolean isIntact();
 }

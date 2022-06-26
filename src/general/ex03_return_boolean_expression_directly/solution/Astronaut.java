@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.return_boolean_expression_directly.solution;
+package general.ex03_return_boolean_expression_directly.solution;
 
 class Astronaut {
 

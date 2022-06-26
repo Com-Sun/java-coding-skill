@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.simplify_boolean_expressions;
+package general.ex04_simplify_boolean_expressions;
 
 public abstract class Crew {
     public int size;

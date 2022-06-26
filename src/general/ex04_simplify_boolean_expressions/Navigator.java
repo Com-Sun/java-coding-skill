@@ -6,18 +6,9 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.return_boolean_expression_directly.problem;
+package general.ex04_simplify_boolean_expressions;
 
-class Astronaut {
-
-    String name;
-    int missions;
-
-    boolean isValid() {
-        if (missions < 0 || name == null || name.trim().isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
-    }
+public interface Navigator {
+    double requiredFuelToEarth();
+    double timeToEarth();
 }
