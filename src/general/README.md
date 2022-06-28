@@ -21,5 +21,14 @@ boolean을 반활할 경우 if문을 사용하기보단 boolean식을 직접 반
 
 - 한 메소드 안에서 추상화 수준이 비슷하도록 구성하라
 
+### [1.5 조건문에서 NPE 피하기](./ex05_avoid_nullpointerexception_in_conditionals)
 
+- 인수를 검증할 경우 순서는 매우 중요하다. 반드시 null을 먼저 확인한 후, 도메인에 따라 '유효하지 않은' 값을 검증하라
 
+매개변수 검증은 protected, default, public만 하면 된다.
+
+private 메소드를 생성하는 경우, null을 전달하지 않게 하라.
+
+### [1.8 코드 대칭 이루기](./ex08_ensure_code_symmetry)
+
+- 거의 같은 것들은 똑같은 것들과 완전히 다른 부분으로 나눌 수 있다!
