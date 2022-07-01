@@ -6,9 +6,10 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.avoid_collection_modification_during_iteration.problem;
+package general.ex12_avoid_collection_modification_during_iteration.solution;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import general.Supply;
@@ -18,9 +19,10 @@ class Inventory {
     private List<Supply> supplies = new ArrayList<>();
 
     void disposeContaminatedSupplies() {
-        for (Supply supply : supplies) {
-            if (supply.isContaminated()) {
-                supplies.remove(supply);
+        Iterator<Supply> iterator = supplies.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().isContaminated()) {
+                iterator.remove();
             }
         }
     }

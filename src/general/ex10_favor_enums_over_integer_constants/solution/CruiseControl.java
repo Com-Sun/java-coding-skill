@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.favor_enums_over_integer_constants.solution;
+package general.ex10_favor_enums_over_integer_constants.solution;
 
 import java.util.Objects;
 

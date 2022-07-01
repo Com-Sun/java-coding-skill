@@ -32,3 +32,52 @@ private 메소드를 생성하는 경우, null을 전달하지 않게 하라.
 ### [1.8 코드 대칭 이루기](./ex08_ensure_code_symmetry)
 
 - 거의 같은 것들은 똑같은 것들과 완전히 다른 부분으로 나눌 수 있다!
+
+
+## 2장 - 코드 스타일 레벨 업 (General)
+
+### 2.1 매직 넘버를 상수로 대체
+
+- 매직넘버: 특별한 맥락 없는 숫자 집합
+
+을 static final 상수로 대체하라!
+
+### 2.2 정수 상수 대신 열거형
+
+- Enum을 사용하자!
+
+### 2.3 For 루프 대신 ForEach
+
+- 인덱스 변수를 자세히 알아야 할 경우는 드물다.
+
+### [2.4 순회하며 컬렉션 수정하지 않기](./ex12_avoid_collection_modification_during_iteration)
+
+- List를 순회하며 List를 수정할 수 없다!
+  - ConcurrentModificationException 발생
+- 대신, Iterator을 사용할 수 있다.
+- Collection.removeIf() 도 있다.
+
+### 2.5 순회하며 계산 집약적 연산하지 않기
+
+- Pattern.matches(regex, supply.toString())는 유용하지만 많은 시간을 요구한다.
+- 위에 들어있는 두 연산을 분리한 뒤, matcher를 사용하자.
+
+### 2.6 새 줄로 그루핑
+
+- 연관된 코드와 개념은 함께 그루핑
+- 서로 다른 그룹은 빈 줄로 각각 분리
+- 수직 서식화 (신문을 생각하자)
+  - 제목 (클래스)
+  - 머릿말(공개 멤버, 생성자, 메서드)
+  - 세부내용(비공개 메서드)
+
+### 2.7 이어붙이기 대신 서식화
+
+- 문자열이 길면 강력한 템플릿 엔진인 StringTemplate을 사용하라
+
+### 2.8 직접 만들지 않고 자바 API 사용하기
+
+- Objects.requireNonNull
+- Collections.frequency
+
+API에 정통하자!

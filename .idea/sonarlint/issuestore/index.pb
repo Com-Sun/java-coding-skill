@@ -3,12 +3,8 @@ A
 fizzbuzztask.java,3/4/344b2851a9db7f2780011400959ae08f64e7da21
 i
 9src/general/always_use_braces/solution/BoardComputer.java,e/4/e48ff0db4cfcbc1cb96a6b92bd61c9268d06c539
-Å
-Qsrc/general/avoid_collection_modification_during_iteration/problem/Inventory.java,a/0/a0f251a1844668635b4423e81357af090773d96e
 h
 8src/general/always_use_braces/problem/BoardComputer.java,c/f/cf5980f52e70ccab38885e213dd88acaef1d4b25
-9
-	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 K
 src/general/Microscope.java,1/0/10778f4aadbbd914abedfbcbe97255fbd417deb9
 z
@@ -43,3 +39,7 @@ u
 Esrc/comments/structure_javadoc_of_packages/solution/package-info.java,1/1/11c4b0c4edc80dcdfe8f68617484ad47f1661976
 9
 	hello.txt,3/8/3857b672471862eab426eba0622e44bd2cedbd5d
+Å
+Qsrc/general/ex05_avoid_nullpointerexception_in_conditionals/solution/Logbook.java,e/6/e63e44e28252fffff0bf1c167f8173dc07839620
+E
+src/general/Rank.java,5/5/55952008f1592f65bd8dd85d7ca4c88759e9248a

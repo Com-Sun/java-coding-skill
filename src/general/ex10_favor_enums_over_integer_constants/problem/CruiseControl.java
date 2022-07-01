@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/javacomp for more book information.
 ***/
-package general.favor_enums_over_integer_constants.problem;
+package general.ex10_favor_enums_over_integer_constants.problem;
 
 class CruiseControl {
     static final int STOP_PRESET = 0;
@@ -20,19 +20,17 @@ class CruiseControl {
     private double targetSpeedKmh;
 
     void setPreset(int speedPreset) {
-        if (speedPreset == CRUISE_SPEED_PRESET) {
-            setTargetSpeedKmh(CRUISE_SPEED_KMH);
-        } else if (speedPreset == PLANETARY_SPEED_PRESET) {
-            setTargetSpeedKmh(PLANETARY_SPEED_KMH);
-        } else if (speedPreset == STOP_PRESET) {
-            setTargetSpeedKmh(STOP_SPEED_KMH);
-        }
     }
 
     void setTargetSpeedKmh(double speedKmh) {
         targetSpeedKmh = speedKmh;
     }
 }
+
+//enum SpeedPreset{
+//    STOP(0), HI(123)
+//
+//}
 
 class Main {
     static final int PLANETARY_SPEED_PRESET = 1;
